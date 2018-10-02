@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <h2>Form Pegawai</h2>
       <hr/>
       <label for="nama">Nama</label>
@@ -16,16 +16,16 @@
       <input type="text" class="form-control" [(ngModel)]="jk">
 
       <br/>
-      <button class="btn btn-primary" (click)="tambahPegawai()">Tambah</button>      
+      <button class="btn btn-block btn-primary" (click)="tambahPegawai()">Tambah</button>      
     </div>
-    <div class="row" ngFor="let pegawai of daftarPegawai">
-      <div class="col-md-12">
+    
+    <h2>Daftar Pegawai</h2>
+            <hr/>
+    <div  class="col-md-6" *ngFor="let pegawai of daftarPegawai">      
         <h2>{{ pegawai.nama }}</h2>
         <h3>{{ pegawai.nip }}</h3>
         <p>{{ pegawai.alamat }}</p>
         <p>{{ pegawai.jk }}</p>
-        
       </div>
     </div>
-  </div>
-</div>
+    </div>
