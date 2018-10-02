@@ -1,0 +1,12 @@
+<p>
+ TUGAS!
+</p>
+<label>Masukkan Nama Anda :  </label>
+<input type ="text"
+class="from-control"
+[(ngModel)]="username">
+<p>Nama : {{username}}</p>
+
+<button class = "btn btn-primary"
+[disabled] = "buttoncheck()"
+(click)="clear()">Add</button>

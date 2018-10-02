@@ -1,0 +1,9 @@
+<label><h3>TUGAS 3</h3></label><br>
+<button 
+  class="btn btn-primary"
+  (click)="onCreationStatus()">Tampilkan Detail</button><br>
+  {{tulisan}}
+  <p *ngIf = "serverCreated">Server telah dibuat, nama server adalah {{serverName}} </p>
+  <p [ngClass] = "{log: a > 4}"
+      [ngStyle] = "{backgroundColor: a > 4? 'lightblue' : 'transparant'}"
+  *ngFor="let a of log" >{{a}}</p>
